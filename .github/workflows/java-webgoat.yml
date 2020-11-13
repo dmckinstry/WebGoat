@@ -1,7 +1,7 @@
 name: FreeStyles_Java-WebGoat
 on:
   push: 
-env:
+# env:
 #  hudson.plugins.ws__cleanup.PreBuildCleanup:
 #    plugin: ws cleanup@0.38
 #    deleteDirs: 'false'
