@@ -1,7 +1,7 @@
-name: FreeStyles_Java-WebGoat
+name: FreeStyles_Java-WebGoat #renamed to remove the /
 on:
   push: 
-# env:
+# env:          # Commented out since env is empty
 #  hudson.plugins.ws__cleanup.PreBuildCleanup:
 #    plugin: ws cleanup@0.38
 #    deleteDirs: 'false'
@@ -12,6 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2 # Added post-conversion
     - name: Set up JDK 1.11
       uses: actions/setup-java@v1
       with:
