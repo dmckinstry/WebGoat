@@ -13,11 +13,13 @@
 name: "CodeQL"
 
 on:
-  push:
-    branches: [ develop ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ develop ]
+  workflow_dispatch:
+# The following would be done in a health project - since this is an inherently unsecure demo project...
+#  push:
+#    branches: [ develop ]
+#  pull_request:
+#    # The branches below must be a subset of the branches above
+#    branches: [ develop ]
 #  schedule:
 #    - cron: '34 17 * * 2'
 
