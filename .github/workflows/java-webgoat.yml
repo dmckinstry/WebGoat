@@ -1,4 +1,4 @@
-name: FreeStyles/Java-WebGoat
+name: FreeStyles_Java-WebGoat
 on:
   push: 
 env:
