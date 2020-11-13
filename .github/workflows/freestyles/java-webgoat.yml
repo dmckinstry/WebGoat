@@ -1,0 +1,35 @@
+name: FreeStyles/Java-WebGoat
+on:
+  workflow_dispatch: 
+env:
+#  hudson.plugins.ws__cleanup.PreBuildCleanup:
+#    plugin: ws cleanup@0.38
+#    deleteDirs: 'false'
+#    cleanupParameter: 
+#    externalDelete: 
+#    disableDeferredWipeout: 'false'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+#    - uses: hudson.tasks.Maven
+#      with:
+#        targets: compile
+#        usePrivateRepository: 'false'
+#        settings:
+#          class: jenkins.mvn.DefaultSettingsProvider
+#        globalSettings:
+#          class: jenkins.mvn.DefaultGlobalSettingsProvider
+#        injectBuildVariables: 'false'
+#    - uses: hudson.tasks.Maven
+#      with:
+#        targets: Goal target-arg
+#        jvmOptions: avm options-arg
+#        pom: pom file-arg
+#        properties: prop arg
+#        usePrivateRepository: 'true'
+#        settings:
+#          path: settings-file-arg
+#        globalSettings:
+#          path: global-settings-arg
+#        injectBuildVariables: 'true'
