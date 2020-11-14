@@ -1,0 +1,27 @@
+name: FreeStyles/Java-WebGoat
+on:
+  push: 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: clean workspace
+      shell: bash
+      run: rm -rf '${{ github.workspace }}/*'
+#    - uses: hudson.tasks.Maven
+#      with:
+#        targets: compile
+#        jvmOptions: | 
+#          jvm1=1
+#          jvm2=2
+#          jvm3=3
+#        properties: | 
+#          # comment
+#          A=1
+#          B=2
+#        usePrivateRepository: 'false'
+#        settings:
+#          class: jenkins.mvn.DefaultSettingsProvider
+#        globalSettings:
+#          class: jenkins.mvn.DefaultGlobalSettingsProvider
+#        injectBuildVariables: 'false'
