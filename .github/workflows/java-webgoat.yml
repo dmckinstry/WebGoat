@@ -1,0 +1,15 @@
+name: Freestyles/Java-WebGoat
+on:
+  push: 
+jobs:
+  build:
+    runs-on: master
+    steps:
+    - name: Set up JDK 1.11
+      uses: actions/setup-java@v1
+      with:
+        java-version: '1.11'
+        server-id: github
+        settings-path: "${{ github.workspace }}"
+    - name: Run maven
+      run: mvn -DA=1 "-DB='t w o'" '-DC="Test 3"' "-DD=Test 4" compile
