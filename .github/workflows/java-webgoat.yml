@@ -12,4 +12,5 @@ jobs:
         server-id: github
         settings-path: "${{ github.workspace }}"
     - name: Run maven
-      run: mvn -DA=1 "-DB='t w o'" '-DC="Test 3"' "-DD=Test 4" compile
+      run: mvn -DA=1 compile
+      # run: mvn -DA=1 "-DB='t w o'" '-DC="Test 3"' "-DD=Test 4" compile
